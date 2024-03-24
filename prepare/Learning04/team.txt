@@ -1,0 +1,162 @@
+---------------------------------------
+
+Review the Program Specification
+
+What does the program do?
+- 3 choices of activities
+    - breathing
+    - reflection
+    - listing
+
+What user inputs does it have?
+- input of time
+- input of lists
+- list of activity (menu)
+- user answsers
+
+What output does it produce?
+- questions
+- count down
+- time animations
+- breathing 
+    - breathing in 
+    - breathing out
+- reflection 
+    - not to repeat questions until all have been used (if want to do for expanded)
+    - general prompt and followup questions for reflection
+- listing  
+    - users input of what they did
+
+How does the program end?
+- does a countdown
+- quit 
+
+---------------------------------------
+
+Determine the classes
+
+What are good candidates for classes in this program?
+- MainActivities (abstract class)
+- BreathingActivity (class)
+- ReflectionActivity (class)
+- ListingActivity (class)
+- MainProgram (class)
+
+What are the primary responsibilities of each class?
+- MainActivities (abstract class)
+    - list name of activity
+    - share discription of activity
+    - ask for duration
+    - saying well done at end of program
+
+- BreathingActivity (class)
+    - duration
+    - breathe in
+    - breathe out
+    - x ammount of time for breathing
+    - well done
+
+- ReflectionActivity (class)
+    - receive a random question
+    - receive a random prompt
+    - press enter before ansking followup questions
+    - duration
+    - well done 
+
+- ListingActivity (class)
+    - duration
+    - receive a random prompt
+    - gather enteries from user
+    - 
+
+- MainProgram (class)
+ - compiler of menu 
+ - calls other classes
+ - selection of choices
+
+ ---------------------------------------
+
+Define class behaviors
+
+What are the behaviors this class will have in order to fulfill its responsibilities? 
+(In other words, what things should this class do?)
+
+- MainActivities (abstract class)
+    - input for duration
+    - explain what Activity is doing
+    - well done message
+
+- BreathingActivity (class)
+    - run time from duration
+
+- ReflectionActivity (class)
+    - run 
+    - get random prompt
+    - get random question
+    - display prompt
+    - display question
+
+- ListingActivity (class)
+    - run
+    - get random prompt
+    - user input(s)
+    
+- MainProgram (class)
+    - control menu
+    - choose a number for activity or quit
+
+---------------------------------------
+
+Define class attributes
+
+What attributes does this class need to fulfill its behaviors? 
+(In other words, what variables should this class store?)
+
+- MainActivities (abstract class)
+    - hold name of activity
+        - _name : string
+    - description of each activity to display
+        - _description: string
+    - duration input
+        - _duration: int 
+
+- BreathingActivity (class)
+    - NA 
+- ReflectionActivity (class)
+    - _prompt: string
+    - _questions: string
+
+- ListingActivity (class)
+    - _count: int
+    - _prompt: string
+
+What are the data types of these member variables?
+- look above
+
+---------------------------------------
+
+Define Constructors
+
+What constructors should each class have?
+- In other words, what parameters should you pass in when creating an object of that type.
+- example
+    public ReflectingActivity()
+    {
+        _name = "Reflecting";
+        _description = "This activity will help you reflect on times ...";
+        _duration = 50;
+
+        // Set other values here that are unique to the Reflecting Activity
+    }
+
+What other work needs to be done to set up these objects?
+- For example, does the constructor need to run code to perform set up tasks, 
+like creating lists, iterating through variables, etc.
+-
+
+---------------------------------------
+
+Review the Design
+
+Are there any classes, methods, or variables, that you do not understand?
+-
