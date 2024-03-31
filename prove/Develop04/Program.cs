@@ -155,7 +155,7 @@ class Program
             Console.WriteLine("4. Exit");
 
             Console.Write("Select an activity: ");
-            string choice = Console.ReadLine();
+            string choice = Console.ReadLine(); 
 
             if (choice == "4")
                 break;
